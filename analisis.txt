@@ -1,0 +1,8 @@
+Entrada:
+pedir valor para A, B, C, y D.
+
+Proceso:
+Suma es igual a la suma entre A, B, C, y D:
+
+Salida:
+mostrar Suma.
