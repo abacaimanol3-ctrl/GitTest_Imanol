@@ -1,0 +1,358 @@
+1- Dados cuatro números naturales A, B, C y D escriba un algoritmo que dé la sumatoria
+
+Analisis
+Salida: Leer suma de 4 números
+Entrada: Números naturales A, B, C y D
+Proceso: Escribir número A, B, C y D, verificar que los nums no sean negativos ni con coma, sumar los números, leer el número resultado
+
+Diseño
+Inicio
+Escribir número A
+leer número A
+escribir número B
+leer número B
+escribir número C
+leer número C
+escribir número D
+leer número D
+sumar números
+leer resultado
+Fin
+
+try:
+A= int(input ("número A: "))
+if A>=0:
+print(A)
+B= int(input ("número B: "))
+if B>=0:
+print(B)
+C= int(input ("número C: "))
+if C>=0:
+print(C)
+D= int(input ("número D: "))
+if D>=0:
+print(D)
+else:
+print("El número D no puede ser negativo")
+else:
+print("El número C no puede ser negativo")
+else:
+print("El número B no puede ser negativo")
+else:
+print("El número A no puede ser negativo")
+RESULTADO= A + B + C + D
+print ("el resultado es: ", RESULTADO)
+except ValueError:
+print("No se pueden escribir números con coma")
+
+2- Dados cuatro números naturales A, B, C, D, escriba un algoritmo que muestre el promedio obtenido
+
+Salida: Leer promedio de 4 números
+Entrada: Números naturales A, B, C y D
+Proceso: Escribir número A, B, C y D, verificar que los nums no sean negativos ni con coma, sumar los números, dividir los números en 4, leer el número resultado
+
+Diseño
+Inicio
+Escribir número A
+leer número A
+escribir número B
+leer número B
+escribir número C
+leer número C
+escribir número D
+leer número D
+sumar números
+dividir los números por 4
+leer resultado
+Fin
+
+try:
+A= int(input ("número A: "))
+if A>=0:
+print(A)
+B= int(input ("número B: "))
+if B>=0:
+print(B)
+C= int(input ("número C: "))
+if C>=0:
+print(C)
+D= int(input ("número D: "))
+if D>=0:
+print(D)
+else:
+print("El número D no puede ser negativo")
+else:
+print("El número C no puede ser negativo")
+else:
+print("El número B no puede ser negativo")
+else:
+print("El número A no puede ser negativo")
+SUMA= A + B + C + D
+RESULTADO= SUMA/4
+print ("el resultado es: ", RESULTADO)
+except ValueError:
+print("No se pueden escribir números con coma")
+
+3- Sean N y M dos números naturales, escriba un algoritmo para determinar si N es divisible por M
+
+Salida: Algoritmo para saber si N es divisible por M
+Entrada: Número N y número M
+Proceso: Escribir los dos números, verificar que los nums no tengan coma ni sean negativos, verificar que M no sea 0,  hacer la división, 
+
+Inicio
+Leer número N
+Leer número M
+Si M es menor o igual a 0, leer que no se puede realizar
+Si M es mayor a 0, leer que si se puede realizar
+Realizar la división (N/M)
+Leer el resultado de la división
+fin
+
+try:
+N= int(input ("número A: "))
+if N>=0:
+print(N)
+M= int(input ("número B: "))
+if M>=0:
+print(M)
+else:
+print("No se pueden escribir números negativos")
+else:
+print("No se pueden escribir números negativos")
+if M <=0 or N <=0:
+print("No se puede realizar la división")
+else:
+print("Se puede realizar la división")
+R= N/M
+print("El resultado es: ", R)
+except ValueError:
+print("No se pueden escribir números con coma")
+
+4- Se necesita obtener el promedio simple de un estudiante a partir de sus 3 notas parciales
+
+Salida: leer el promedio
+Entrada: 3 notas del estudiante
+Proceso: Escribir las 3 notas, verificar que no sean nums negativos, leer las 3 notas
+
+diseño
+inicio
+ingresar nota1, comprobar que sea positiva
+ingresar nota2, comprobar que sea positiva
+ingresar nota3, comprobar que sea positiva
+sumar notas
+sacar el promedio de las notas con una división
+mostrar el promedio
+fin
+
+n1= float(input ("Ingrese primer nota: "))
+if n1>=0:
+print(n1)
+n2= float(input ("Ingrese segunda nota: "))
+if n2>=0:
+print(n2)
+n3= float(input ("Ingrese tercer nota: "))
+if n3>=0:
+print(n3)
+sumnotas= n1+n2+n3
+promnotas= sumnotas/3
+print ("El promedio del estudiante es: ", promnotas)
+else:
+print("No se pueden escribir números negativos")
+else:
+print("No se pueden escribir números negativos")
+else:
+print("No se pueden escribir números negativos")
+
+6- Se tiene como datos los sueldos de tres empleados: Suel1, Suel2, Suel3 y tres descuentos variables expresados como porcentajes: Porc1, Porc2, Porc3, respectivamente. Calcular y mostrar cada uno de los sueldos netos.
+
+SALIDA: Mostrar los sueldos netos
+ENTRADA: Sueldo de 3 empleados y 3 descuentos
+PROCESO: Escribir los sueldos 1, 2 y 3, escribir los descuentos 1, 2 y 3, verificar que no sean negativos, calcular, leer el resultado
+
+inicio
+escribir sueldo y porcentaje 1, comprobar que sea numero positivo
+leer sueldo y porcentaje 1 
+repetir con los otros 2
+hacer calculo sueldo neto = sueldo bruto - (sueldo bruto * porcentaje / 100)
+repetir con los otros 2
+leer el sueldo neto de los 3
+fin
+
+suel1= float(input ("Ingrese primer sueldo: "))
+porc1= float(input ("ingrese primer descuento: "))
+if suel1>=0:
+print ("El sueldo es de: ", suel1)
+if porc1>=0:
+print("El descuento es del ", porc1,"%")
+net1= suel1-(suel1*porc1/100)
+suel2= float(input ("ingrese segundo sueldo: "))
+porc2= float(input("ingrese segundo descuento: "))
+if suel2>=0:
+print ("El sueldo es de", suel2)
+if porc2>=0:
+print("El descuento es del ", porc2,"%")
+net2= suel2-(suel2*porc2/100)
+suel3= float(input ("ingrese tercer sueldo: "))
+porc3= float(input("ingrese tercer descuento: "))
+if suel3>=0:
+print ("El sueldo es del ", suel3)
+if porc3>=0:
+print ("El descuento es del ", porc3,"%")
+net3= suel3-(suel3*porc3/100)
+print("El primer sueldo neto es de: ", net1)
+print("El segundo sueldo neto es de: ", net2)
+print("El tercer sueldo neto es de: ", net3)
+else:
+print ("El número no puede ser negativo")
+else:
+print ("El número no puede ser negativo")
+else:
+print ("El número no puede ser negativo")
+else:
+print ("El número no puede ser negativo")
+else:
+print("El número no puede ser negativo")
+else:
+print("El número no puede ser negativo")
+
+7- Dados dos nombres escritos en minúscula obtengo la longitud de cada uno de ellos.
+Detallar tipo de datos de la entrada y de la salida.
+
+SALIDA: Cuantas letras tiene cada nombre
+Entrada: Nombre
+Proceso: escribir nombre, verificar que esté en minúscula, contar letras, leer la cantidad de letras
+
+Inicio
+Escribo el nombre 1
+compruebo que sea letra minusculas
+Leo la cantidad de dígitos que tiene el nombre
+repito con nombre 2
+fin
+
+n1= input("Escriba el nombre en letras minúsculas: ")
+if n1.islower():
+print(n1,", la longitud del nombre es de ", len (n1))
+n2= input("Escriba el nombre en letras minúsculas: ")
+if n2.islower():
+print(n2," la longitud del nombre es de ", len (n2))
+else:
+print("Inserte su nombre en MINÚSCULAS")
+else:
+print("Inserte su nombre en MINÚSCULAS")
+
+8- Dado un número natural N, se quiere obtener un número real R que sea el resultado de dividir la suma de los dígitos de N por la cantidad de dígitos que posee N. Por ejemplo:
+Si N = 3421 luego R = 10/4 = 2.5
+
+Entrada: Numero natural
+Salida: Resultado de la división de este número, por la cantidad de dígitos del número
+Proceso: Leer el número, verificar que no sea negativo ni con “,”, dividirlo por la cantidad de dígitos que posea
+
+inicio
+escribo un numero
+verifico que sea natural
+verifico cuantos dígitos tiene el numero que escribí
+divido el numero que escribí por sus dígitos
+leo el resultado
+fin
+
+try:
+n=int(input("escriba un número entero: "))
+if n>=0:
+m=len(str(n))
+r=n/m
+print("El resultado de la división del número por la cantidad de dígitos que posee es: ", r)
+else:
+print("El número debe ser entero")
+except ValueError:
+print("El número no puede tener coma")
+
+9- Tres personas deciden invertir su dinero para formar una empresa. Cada una de ellas invierte una cantidad distinta. Calcular y mostrar el porcentaje que cada una invierte con respecto al total de la inversión.
+
+Entrada: dinero que invirtió cada persona
+Salida: Porcentaje que cada uno invirtió
+Proceso: escribir dinero invertido de cada uno, verificar que no sea un num negativo, sumar el total del dinero, calcular cuanto porcentaje representa cada valor segun el numero total
+
+inicio
+escribo el dinero que invirtió la persona
+compruebo que no sea num negativo
+leo el número
+repito con los otros
+hago la suma de los 3 números
+calculo el porcentaje de inversión de cada uno: porcentaje= (dinero inv. / suma total) * 100
+fin
+
+d1= float(input("Cantidad invertida por la primer persona: "))
+if d1>=0:
+print ("La cantidad invertida por la primer persona es: ", d1 )
+d2= float(input("Cantidad invertida por la segunda persona: "))
+if d2>=0:
+print ("La cantidad invertida por la segunda persona es: ", d2 )
+d3= float(input("Cantidad invertida por la tercer persona: "))
+if d3>=0:
+print ("La cantidad invertida por la tercer persona es: ", d3 )
+VT=d1+d2+d3
+pd1= (d1/VT)*100
+pd2= (d2/VT)*100
+pd3= (d3/VT)*100
+print ("El total de la inversión es de ", VT)
+print ("La primera persona invirtió un ",pd1,"%,la segunda un",pd2,"%, y la tercer persona un ",pd3, "%")
+else:
+print ("El número no puede ser negativo")
+else:
+print ("El número no puede ser negativo")
+else:
+print ("El número no puede ser negativo")
+
+10- La serie numérica de Fibonacci declara que cada término de la misma es la suma de los dos términos anteriores. Teniendo como datos el término N1 y el posterior N2, calcular y mostrar los 5 términos siguientes
+
+12- Teniendo como dato un número par N, calcular y mostrar los cinco impares siguientes a él.
+
+SALIDA: mostrar los 5 impares que le siguen a un núm
+Entrada: Número par NATURAL
+Proceso: Escribir número par natural, sumarle 1, luego 3, 5, 7 y 9
+
+inicio
+escribir el numero
+verificar que sea par natural
+sumarle 1, 3, 5, 7 y 9 para que siempre de impar
+leer los resultados
+fin
+
+n=int(input("Inserte número natural par: "))
+if n>=0 and n%2==0:
+print("El número natural es: ", n, "y los siguientes 5 números impares son: ")
+print(n+1,"-", n+3,"-", n+5,"-", n+7,"-", n+9)
+else:
+print("El número debe ser par y positivo")
+
+11- Ingresar un número entero N, calcular y mostrar la sumatoria de los 5 enteros posteriores a N.
+
+Salida: Mostrar los 5 numeros que siguen al ingresado y la suma de estos
+Entrada: Numero ingresado
+Proceso: Escribir numero, verificar que no sea negativo, sumarle los 5 enteros posteriores y mostrar todos los resultados, sumar todos los resultados y mostrar el número
+
+inicio
+escribir el numero
+verificar que sea entero natural
+sumarle al numero 1,2,3,4 y 5
+leer resultados
+sumar los resultados
+leer el número natural, los 5 enteros posteriores y la suma del num natural y sus enteros posteriores
+fin
+
+try:
+n=int(input("Inserte número natural: "))
+if n>=0:
+print("El número natural es: ", n, "y la sumatoria de los siguientes 5 enteros son")
+n1= n+1
+n2= n+2
+n3=n+3
+n4=n+4
+n5=n+5
+nt=n1+n2+n3+n4+n5
+print("El número natural es: ",n, "Los siguientes 5 enteros son: ",n1,"-", n2,"-", n3,"-", n4,"-", n5)
+print("La sumatoria de los 5 enteros posteriores al número instertado es: ",nt)
+else:
+print("El número debe ser positivo")
+except ValueError:
+print("El número no puede tener coma")
